@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- fonts -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+			rel="stylesheet" />
+
+		<!-- icons -->
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		<!-- style -->
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="head-style">
+				<h1 class="m-5">Bookmarker</h1>
+			</div>
+			
+
+			<div class="doted-line"></div>
+
+			<h3 class="m-4">
+				<i class="fa-solid fa-bookmark"></i>
+				Bookmark your favorite sites
+				<i class="fa-solid fa-bookmark"></i>
+			</h3>
+
+			<div class="form">
+				<label for="siteName" class="text-capitalize mb-2">
+					<i class="fa-solid fa-book-bookmark me-1"></i>
+					site name
+				</label>
+				<div class="input-group mb-4 position-relative">
+					<input
+						id="siteName"
+						type="text"
+						class="form-control py-2"
+						placeholder="Bookmark Name"
+						aria-label="siteName"
+						aria-describedby="basic-addon1"
+						id="siteName"/>
+					
+				</div>
+
+				<label for="siteURL" class="text-capitalize mb-2">
+					<i class="fa-solid fa-link"></i>
+					Site URL
+				</label>
+				<div class="input-group mb-5 position-relative">
+					<input
+						id="siteURL"
+						type="text"
+						class="form-control py-2"
+						placeholder="Website URL"
+						aria-label="siteName"
+						aria-describedby="basic-addon1"
+						id="siteURL" />
+					
+				</div>
+
+				<button onclick="addSite" type="button" class="btn submit-btn mx-auto d-block" id="submit">
+					Submit
+				</button>
+			</div>
+
+			<div class="doted-line"></div>
+
+			<div class="table-responsive mt-4 text-center text-capitalize">
+				<table class="table align-middle">
+					<thead>
+						<tr>
+							<th>Index</th>
+							<th>Website Name</th>
+							<th>Visit</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+
+					
+
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
